@@ -51,3 +51,27 @@ data_tuples = list(zip(nama_list[1:], harga_list[1:], penjualan_list[1:]))
   temp_data['Halaman'] = pg+1
   dataset = dataset.append(temp_data)
 ```
+Mengubah tipe data harga dan jumlah penjualan menjadi *integer* supaya bisa dikalkulasi untuk menghasilkan nilai GMV
+```Python
+df = pd.DataFrame(dataset)
+
+#merubah tipe data harga dan jumlah penjualan menjadi integer
+df['Harga'] = df['Harga'].astype('int')
+df['Jumlah_Penjualan'] = df['Jumlah_Penjualan'].astype('int')
+
+#Estimasi GMV (harga * jumlah penjualan)
+df['GMV'] = df['Harga'] * df['Jumlah_Penjualan']
+
+df.head()
+```
+Lima data teratas dari *dataframe* Konichiwa
+<p align="center">
+  <img width="700" src="https://github.com/alfianpr/study-case/blob/main/case_1/pict/dataframe.PNG?raw=true" alt="Dataframe">
+</p>
+
+Selanjutnya *dataframe* disimpan dalam format CSV
+```Python
+df.to_csv ("{}1_3.csv".format(brand))
+```
+## Tantangan
+Dari pengalaman *scraping* ini, proses *scraping* perlu dilakukan berulang-ulang karena kadang tidak semua data yang ada di halaman shopee *terscrape* semua. Selain itu, ada beberapa situs yang lebih susah untuk *discraping*. Hal ini membuat metode *scraping* sangat beragam dan terus berkembang dari waktu ke waktu karena perubahan struktur *website* yang dinamis dan kebutuhan data yang semakin banyak.
