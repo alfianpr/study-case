@@ -1,1 +1,3 @@
-Case pertama
+# Case pertama
+## Abstrak
+Case ini menggunakan *library* Selenium yang di *Python* untuk *scraping website* Shopee indonesia. Produk yang menjadi pengamatan adalah Rockbros, Matoa dan Konichiwa serta informasi yang dicari adalah nama SKU, harga, jumlah yang terjual, halaman. Untuk produk Rockbros dilakukan *scraping* di halaman satu, Matoa halaman satu sampai lima dan Konichiwa halaman satu sampai dua (maksimal halaman pencarian hanya sampai dua halaman). Setelah semua informasi didapatkan, data-data tersebut digabung menjadi suatu *dataframe* dan dilanjut dengan perhitungan GMV. GMV didapat dengan cara mengalikan 
