@@ -1,4 +1,14 @@
 # Case pertama
+## Revisi
+1. Supaya bisa *scalable*, dibuat fungsi dengan nama scrap dengan parameter nama brand dan halaman supaya bisa dipanggil untuk scraping
+   <p align="center">
+   <img width="400" src="https://github.com/alfianpr/study-case/blob/main/case_1/pict/fungsi.PNG?raw=true" alt="fungsi">
+   </p>
+2. Untuk bisa *menstate*, ditambah fungsi tunggu dan *delay* supaya chrome browser menampung semua konten dahulu sebelum fungsi find dimulai. 
+   <p align="center">
+   <img width="400" src="https://github.com/alfianpr/study-case/blob/main/case_1/pict/delay.PNG?raw=true" alt="fungsi">
+   </p>
+
 ## Abstrak
 Case ini menggunakan *library* Selenium yang di *Python* untuk *scraping website* Shopee Indonesia. Produk yang menjadi pengamatan adalah Rockbros, Matoa dan Konichiwa serta informasi yang dicari adalah nama SKU, harga, jumlah yang terjual, halaman. Untuk produk Rockbros dilakukan *scraping* di halaman satu, Matoa halaman satu sampai lima dan Konichiwa halaman satu sampai dua (maksimal halaman pencarian hanya sampai dua halaman). Setelah semua informasi didapatkan, data-data tersebut digabung menjadi satu *dataframe* dan disesuaikan jenis-jenis tipe datanya. Setelah itu dilanjut dengan perhitungan GMV. GMV didapat dengan cara mengalikan harga dengan jumlah penjualan. Terakhir, data disimpan dalam format CSV.
 ## Alur Program
