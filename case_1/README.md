@@ -4,7 +4,7 @@
    <p align="center">
    <img width="400" src="https://github.com/alfianpr/study-case/blob/main/case_1/pict/fungsi.PNG?raw=true" alt="fungsi">
    </p>
-2. Untuk bisa *menstate*, ditambah fungsi tunggu dan *delay* supaya chrome browser menampung semua konten dahulu sebelum fungsi find dimulai. 
+2. Untuk bisa *menstate*, ditambah fungsi tunggu dan *delay* supaya chrome browser menampung semua konten dahulu sebelum fungsi find dimulai. Selain nenambahkan fungsi delay, ditambahkan juga fungsi scroll down kebawah supaya mempercepat loading konten sampai bawah. 
    <p align="center">
    <img width="400" src="https://github.com/alfianpr/study-case/blob/main/case_1/pict/delay.PNG?raw=true" alt="fungsi">
    </p>
