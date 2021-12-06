@@ -1,7 +1,20 @@
 # Case kedua
+## Revisi
 <p align="center">
-  <img width="900" src="https://github.com/alfianpr/study-case/blob/main/case_2/magpie.PNG?raw=true" alt="magpie">
+  <img width="900" src="https://github.com/alfianpr/study-case/blob/main/case_2/tmux%20detach.PNG?raw=true" alt="magpie">
 </p>
+
+## 1. Menambahkan Public key ke Authorized_key List
+<p align="center">
+  <img width="900" src="https://github.com/alfianpr/study-case/blob/main/case_2/SSH_RSA.PNG?raw=true" alt="magpie">
+</p>
+
+## 2. Detach session
+<p align="center">
+  <img width="900" src="https://github.com/alfianpr/study-case/blob/main/case_2/TMUX%20list.PNG?raw=true" alt="magpie">
+</p>
+
+
 Pada case ini, saya menggunakan WSL untuk menjalankan sistem operasi Ubuntu di Windows. Tidak ada kendala ketika menggunakan WSL, sama seperti ketika menggunakan Linux langsung.
 
 ## Pertanyaan Bonus
